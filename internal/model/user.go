@@ -13,14 +13,7 @@ type User struct {
 	ID                string
 	ActiveBuild       Build
 	DoneBuild         Build
-	JenkinsStateList  []JenkinsState
 	JenkinsLastUpdate time.Time
-}
-
-type JenkinsState struct {
-	Running bool
-	Time    time.Time
-	Message string
 }
 
 func NewUser(id string, name string) User {

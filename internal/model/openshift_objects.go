@@ -146,7 +146,7 @@ func (s DCStatus) GetByType(t string) (Condition, error) {
 		}
 	}
 
-	return Condition{}, fmt.Errorf("Could not find condition '%s'", t)
+	return Condition{}, fmt.Errorf("could not find condition '%s'", t)
 }
 
 var Phases = map[string]int{
